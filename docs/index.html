@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v7.2" type="text/css">
+
+  <script language="JavaScript" src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=v7.2"></script>
+
+
+</head>
+
+<body>
+ 
+
+  <script>
+  	const div = document.createElement("div");
+  	document.body.appendChild(div);
+      Autodesk.Viewing.Initializer({env:'Local'}, () =>new Autodesk.Viewing.Private.GuiViewer3D( div).start( 'plant/0/0.svf'))
+
+  </script>
+</body>
+
+</html>
